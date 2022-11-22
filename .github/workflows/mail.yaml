@@ -8,15 +8,19 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+       fail-fast: false
+       matrix:
+         python-version: ["3.8", "3.9", "3.10"]
     steps:
 
       - name: checkout repo content
         uses: actions/checkout@v2 # checkout the repository content to github runner
 
-      - name: setup python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8.0' # install the python version needed
+      # - name: setup python
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: '3.8.0' # install the python version needed
           
       - name: install python packages
         run: |
