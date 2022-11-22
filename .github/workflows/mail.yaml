@@ -2,7 +2,7 @@ name: send-mail
 
 on:
   schedule:
-    - cron: '1 * * * *' # runs at 8:40 UTC everyday
+    - cron: '30 21 * * *' # runs at 8:40 UTC everyday
   workflow_dispatch:
 
 jobs:
