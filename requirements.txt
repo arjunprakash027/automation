@@ -1,0 +1,5 @@
+yahoofinancials
+pandas
+numpy
+matplotlib
+smtplib

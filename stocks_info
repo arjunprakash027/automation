@@ -1,0 +1,22 @@
+{
+    "Stock_details": {
+        "0": {
+            "Name": "TATACONSUM",
+            "price": 771.3,
+            "50 days ma": 779.696,
+            "200 days ma": 769.00977
+        },
+        "1": {
+            "Name": "BERGEPAINT",
+            "price": 609.65,
+            "50 days ma": 613.1,
+            "200 days ma": 643.5613
+        },
+        "2": {
+            "Name": "COALINDIA",
+            "price": 229.1,
+            "50 days ma": 234.388,
+            "200 days ma": 203.6205
+        }
+    }
+}
