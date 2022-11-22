@@ -2,7 +2,7 @@ name: send-mail
 
 on:
   schedule:
-    - cron: '40 20 * * *' # runs at 8:40 UTC everyday
+    - cron: '34 20 * * *' # runs at 8:40 UTC everyday
 
 jobs:
   build:
