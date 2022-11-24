@@ -2,7 +2,7 @@ name: send-mail
 
 on:
   schedule:
-    - cron: '30 5 * * *' # runs at 8:40 UTC everyday
+    - cron: '30 12 * * *' #UTC to IST converter https://savvytime.com/converter/utc-to-ist
   workflow_dispatch:
 
 jobs:
