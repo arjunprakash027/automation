@@ -4,6 +4,9 @@ import numpy as np
 from datetime import date,timedelta
 import matplotlib.pyplot as plt
 import json
+import logging
+logging.basicConfig(filename ='app.log',
+                        level = logging.INFO)
 
 def stock_price_info():
 	today = date.today()
@@ -39,7 +42,14 @@ def stock_price_info():
 		dicti['Stock_details'][i]['price'] = price
 		dicti['Stock_details'][i]['50 days ma'] = fifty_ma
 		dicti['Stock_details'][i]['200 days ma'] = twohundred_ma
+		json_object = json.dumps(dicti, indent = 4)
+		with open("stocks_info", "w") as outfile:
+			outfile.write(json_object)
+		logging.info("stocks_info working")
+		print("ran")
 
+
+if __name__ == '__main__':
 	print(dicti)
 	json_object = json.dumps(dicti, indent = 4)
 	with open("stocks_info", "w") as outfile:

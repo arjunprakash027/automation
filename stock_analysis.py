@@ -1,5 +1,8 @@
 from yahoofinancials import YahooFinancials
 from datetime import date,timedelta
+import logging
+logging.basicConfig(filename ='app.log',
+                        level = logging.INFO)
 
 
 def analyse_stock(stock):
@@ -57,6 +60,7 @@ def analyse_stock(stock):
         return("expected positive growth")
     else:
         return("expected negative growth")
+    logging.info("analyse_stock working")
         
 
 
